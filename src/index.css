@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* @media (max-width: 576px) {
+  .extrasmalldevice{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+} */
+.pricecard{
+  transform: rotate(-40deg);
+}
+
+
+body {
+   font-family: 'Nunito', sans-serif;
+ }
+ .red-circle::before {
+   content: '';
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   background-color: #bf00ff; /* Red color */
+   border-radius: 50%;
+   margin-right: 10px; /* Adjust the margin as needed */
+ }
+ .form-control {
+    border: 1px solid #dee2e6!important;
+    font-size: 14px!important;
+    line-height: 26px!important;
+    background-color: #fff!important;
+    border-radius: 6px!important;}
+ 
+    .input:focus {
+      border: none; /* No border */
+      box-shadow: 0 0 8px #C054D4; /* Green box shadow */
+      outline: none; /* Remove the default blue outline (if needed) */
+    }
+    .input {
+      border: 2px solid #ccc; /* Default border color */
+      box-shadow: none; /* No box shadow */
+    }
+   
+    
+    @media (min-width: 361px) and (max-width: 768px) {
+      /* CSS for container width 361 to 768 pixels */
+      .flex {
+        flex-direction: row;
+      }
+    }
+    
+/* // faqs img */
+    .faqApplyCaompanyLogo {
+      background: url('./Images/FAQsimg.jpg');
+      background-position: center;
+      background-size: cover;
+      border-bottom-right-radius: 100rem 3.5rem;
+      border-bottom-left-radius: 100rem 3.5rem;
+      height: 20rem !important;
+      width: 100%;
+  }
+  
+
+.faqLinkButton {
+  border: 1px solid rgba(99,99,99,.2);
+  height: 3rem;
+  width: 8rem;
+  gap: 5px;
+  border-radius: 0.5rem;
+  margin-top: -1rem;
+  display: flex;
+  /* margin-left: 42%; */
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  align-items: center;
+}
+.leftTargetQuestions {
+  top: 130px;
+  width: 22rem;
+  height: 20rem;
+  padding: 2rem;
+  border: #867878;
+  border-radius: 1rem;
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* for loading animation  */
+.dot-loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-loader {
+  width: 10px;
+  height: 10px;
+  background-color: #BF00FF; /* Choose your desired color */
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: dotAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes dotAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+/* carrer jobs  img */
+.carrer {
+  background: url('./Images/FAQsimg.jpg');
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 100rem 3.5rem;
+  border-bottom-left-radius: 100rem 3.5rem;
+  /* height: 15rem !important;
+  width: 100%; */
 }
